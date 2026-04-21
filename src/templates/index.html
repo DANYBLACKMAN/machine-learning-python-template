@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Predictor de Posiciones NBA</title>
+    <style>
+        body { font-family: Arial, sans-serif; background-color: #f4f4f4; text-align: center; padding: 40px; }
+        form { background: white; padding: 20px; border-radius: 8px; display: inline-block; text-align: left; box-shadow: 0 4px 8px rgba(0,0,0,0.1); }
+        input[type="number"] { width: 100%; padding: 8px; margin: 5px 0 15px; border-radius: 4px; border: 1px solid #ccc; box-sizing: border-box; }
+        input[type="submit"] { background: #333; color: white; padding: 10px; width: 100%; border: none; border-radius: 4px; cursor: pointer; font-size: 16px; }
+        input[type="submit"]:hover { background: #555; }
+        .alerta { margin-top: 20px; background: #d4edda; padding: 15px; border-radius: 5px; color: #155724; border: 1px solid #c3e6cb; }
+    </style>
+</head>
+<body>
+
+    <h2>NBA: ¿Qué posición jugarías según tus estadísticas?</h2>
+    
+    <form method="POST">
+        Minutos Jugados (MPG): <input type="number" step="any" name="mpg" required>
+        Triples Intentados (3PA): <input type="number" step="any" name="tpa" required>
+        Porcentaje Triples (3P%): <input type="number" step="any" name="tpp" required>
+        Puntos por juego (PPG): <input type="number" step="any" name="ppg" required>
+        Rebotes por juego (RPG): <input type="number" step="any" name="rpg" required>
+        Asistencias por juego (APG): <input type="number" step="any" name="apg" required>
+        Robos por juego (SPG): <input type="number" step="any" name="spg" required>
+        Tapones por juego (BPG): <input type="number" step="any" name="bpg" required>
+
+        <input type="submit" value="Adivinar Posición">
+    </form>
+
+    {% if resultado_final %}
+        <div class="alerta">
+            <h3>¡El modelo dice que eres: {{ resultado_final }}!</h3>
+        </div>
+    {% endif %}
+
+</body>
+</html>

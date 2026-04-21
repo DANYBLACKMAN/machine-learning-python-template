@@ -110,3 +110,36 @@ To process data, you can modify the app.py script to include your data processin
 This template was built as part of the [Data Science and Machine Learning Bootcamp](https://4geeksacademy.com/us/coding-bootcamps/datascience-machine-learning) by 4Geeks Academy by [Alejandro Sanchez](https://twitter.com/alesanchezr) and many other contributors. Learn more about [4Geeks Academy BootCamp programs](https://4geeksacademy.com/us/programs) here.
 
 Other templates and resources like this can be found on the school's GitHub page.
+
+# Predictor de Posiciones NBA - Proyecto Final DS-21
+
+**Autor:** Dany Daniel Ballestero González  
+**Ubicación:** Viña del Mar, Chile  
+**Tecnologías:** Python, Flask, Scikit-Learn, Pandas, Render.
+
+## 🏀 Descripción del Proyecto
+Este proyecto es una aplicación web de Machine Learning diseñada para predecir la posición de un jugador de la NBA (Guard, Forward o Center) basándose en sus estadísticas de juego (puntos, rebotes, asistencias, etc.). 
+
+Fue desarrollado como parte del programa de formación en Data Science, utilizando algoritmos de clasificación supervisada.
+
+## 🚀 Funcionalidades
+- Interfaz web interactiva construida con Flask.
+- Predicción en tiempo real utilizando un modelo pre-entrenado (`.sav`).
+- Despliegue automático en la nube a través de Render.com.
+
+## 🛠️ Instalación y Uso Local
+1. Clonar el repositorio.
+2. Instalar dependencias: `pip install -r requirements.txt`.
+3. Ejecutar la aplicación: `python src/app.py`.
+4. Abrir en el navegador: `http://localhost:8080`.
+
+## 📊 El Modelo
+El modelo fue entrenado utilizando datos históricos de la NBA, enfocándose en métricas clave como:
+- MPG (Minutos por juego)
+- 3PA (Triples intentados)
+- PPG (Puntos por juego)
+- RPG (Rebotes por juego)
+- APG (Asistencias por juego)
+
+---
+*Este proyecto forma parte de mi portafolio de Data Science en crecimiento.*
